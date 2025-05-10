@@ -9,10 +9,5 @@ def factorial(n):
     return result
 
 if __name__ == "__main__":
-    try:
-        num = int(sys.argv[1])
-        if num < 0:
-            raise ValueError
-        print(factorial(num))
-    except (IndexError, ValueError):
-        sys.exit(1)
+    f = factorial(int(sys.argv[1]))
+    print(f)
