@@ -5,14 +5,14 @@ def factorial(n):
     result = 1
     while n > 1:
         result *= n
-        n -= 1  # Fix: decrement n to avoid infinite loop
+        n -= 1  # Fix: decrement n
     return result
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Usage: ./script.py <non-negative integer>")
         sys.exit(1)
-    
+
     try:
         num = int(sys.argv[1])
         if num < 0:
